@@ -1,0 +1,86 @@
+:root{
+    --red:hsl(0, 100%, 74%) ;
+    --green:hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dblue:hsl(249, 10%, 26%) ;
+    --gblue: hsl(246, 25%, 77%);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
+h1{
+    font-weight: 700;
+    font-size: 25px;
+}
+.top{
+    color: white;
+    text-align: center;
+}
+.bluebutton{
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue);
+    text-align: center;
+    border-radius: 5px;
+}
+.bold{
+    font-weight: 500;
+}
+.bottom{
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-top: 10px;
+    text-align: center;
+   
+}
+.input{
+    margin: 10px ;
+    border: 1px solid var(--gblue);
+    border-radius: 5px;
+    padding:10px;
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--dblue);
+}
+#fname{
+  margin-top: 0;
+}
+.bluebutton:hover{
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    background-color: var(--green);
+    color: white;
+    padding: 10px ;
+    border-radius: 5px;
+    /* width: 100%; */
+    
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+        /* background-repeat: no-repeat; */
+        background-color: var(--red);
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        width: 90%;
+        align-self: center;
+    }
+    .bluebutton{
+        margin-top: 40px;
+        padding:10px 30px;
+    }
+    .bottom{
+        /* width: 90%; */
+    }
+}
